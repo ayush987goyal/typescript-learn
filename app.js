@@ -83,3 +83,14 @@ var finalValue = 'A string';
 if (typeof finalValue == 'string') {
     console.log(finalValue);
 }
+// never
+function neverReturns() {
+    throw new Error('An error');
+}
+// Nullable types
+var canBeNull = 12;
+canBeNull = null;
+var canAlsoBeNull;
+canAlsoBeNull = null;
+var canThisBeAny = null;
+canThisBeAny = 12;
