@@ -52,3 +52,34 @@ var myMultiply;
 // myMultiply();
 myMultiply = multiply;
 console.log(myMultiply(5, 2));
+// objects
+var userData = {
+    name: 'Ayush',
+    age: 22
+};
+// userData = {
+//   a: 'hello',
+//   b: 22
+// };
+// complex object
+var complex = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+// union types
+var myRealRealAge = 22;
+myRealRealAge = '22';
+// myRealRealAge = true;
+// check types
+var finalValue = 'A string';
+if (typeof finalValue == 'string') {
+    console.log(finalValue);
+}

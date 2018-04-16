@@ -61,3 +61,42 @@ let myMultiply: (val1: number, val2: number) => number;
 // myMultiply();
 myMultiply = multiply;
 console.log(myMultiply(5, 2));
+
+// objects
+let userData: { name: string; age: number } = {
+  name: 'Ayush',
+  age: 22
+};
+// userData = {
+//   a: 'hello',
+//   b: 22
+// };
+
+// complex object
+let complex: { data: number[]; output: (all: boolean) => number[] } = {
+  data: [100, 3.99, 10],
+  output: function(all: boolean): number[] {
+    return this.data;
+  }
+};
+
+// type alias
+type Complex = { data: number[]; output: (all: boolean) => number[] };
+
+let complex2: Complex = {
+  data: [100, 3.99, 10],
+  output: function(all: boolean): number[] {
+    return this.data;
+  }
+};
+
+// union types
+let myRealRealAge: number | string = 22;
+myRealRealAge = '22';
+// myRealRealAge = true;
+
+// check types
+let finalValue = 'A string';
+if (typeof finalValue == 'string') {
+  console.log(finalValue);
+}
