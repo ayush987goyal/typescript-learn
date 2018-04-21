@@ -14,5 +14,8 @@
   "devDependencies": {
     "lite-server": "^2.3.0",
     "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "systemjs": "^0.21.3"
   }
 }
