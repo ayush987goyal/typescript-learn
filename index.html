@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TypeScript Course</title>
-    <script src="module-9/app.js"></script>
+    <script src="./node_modules/systemjs/dist/system.js"></script>
 </head>
 <body>
-
+    <div id="app">Change it with jQuery</div>
+    <script>
+        SystemJS.config({
+            map: {
+                'jquery': './node_modules/jquery/dist/jquery.min.js'
+            },
+            baseURL: '/module-10',
+            packages: {
+                '/module-10': {
+                    defaultExtension: 'js'
+                }
+            }
+        });    
+        SystemJS.import('app.js');
+    </script>
 </body>
 </html>
